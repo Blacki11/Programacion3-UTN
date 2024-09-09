@@ -77,9 +77,48 @@ button {
 button:hover {
   border-color: #646cff;
 }
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.form-exercise {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+.label-form {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+}
+
+.input-form {
+  font: 1em sans-serif;
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+.input-form:focus {
+  border-color: #000;
+}
+
+.errorBook {
+  color: red;
+}
+
+.warningDelete {
+  color: rgb(255, 255, 255);
+  background-color: red;
 }
 
 @media (prefers-color-scheme: light) {
